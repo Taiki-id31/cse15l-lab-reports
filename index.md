@@ -1,3 +1,8 @@
-Hello world!
+Today's Schedule
+
+08:00 - 09:00: CSE 20 LE
+12:00 - 14:00: CSE 15L LA
+15:30 - 17:30: EDS 39 SE
+18:00 - 19:00: MATH 18 DI
 
 
