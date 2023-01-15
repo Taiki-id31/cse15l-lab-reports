@@ -1,2 +1,10 @@
-Lab Report Week1 (Taiki Yoshino)
+# Lab Report 1
+
+## Installing VSCode
+
+
+
+## Remotely Connecting
+
+## Run Some Commands
 
