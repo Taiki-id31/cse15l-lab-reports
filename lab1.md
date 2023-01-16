@@ -40,3 +40,8 @@ Now, you can edit the file using some commands.
 
 In the example below, I created a new directory called “taiki” using “mkdir” command and moved there using “cd.” I also went back to my home directory using “~.”  
 ![image](lab-report1-images/vscode-command-image.png)
+
+**#Note**  
+To logout the page, 
+Ctrl-D
+Run the command exit
