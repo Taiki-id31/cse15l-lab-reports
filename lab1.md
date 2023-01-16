@@ -28,7 +28,7 @@ If you success in login in, this output will appear.
 ![image](lab-report1-images/vscode-loginoutput-image.png)
 
 ## Run Some Commands
-**#Note** 
+**#Note**   
 Now, you can edit the file using some commands.
 
 * pwb : working directory (current directory)
