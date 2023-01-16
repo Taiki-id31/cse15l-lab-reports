@@ -2,8 +2,7 @@
 
 ## Installing VSCode
 **#Note**  
-To download the VSCode, you should go to this website: https://code.visualstudio.com/ and choose the compatible one with your device(ex. Mac).  
-(However, since I have already downloaded it in the CSE 11, I didn't need to do it this time.) 
+To download the VSCode, you should go to this website: https://code.visualstudio.com/ and choose the compatible one with your device(ex. Mac). (However, since I have already downloaded it in the CSE 11, I didn't need to do it this time.) 
 
 ![image](lab-report1-images/vscode-download-image.png)
 
@@ -24,20 +23,20 @@ After that, you will be required to enter a login password. (this password is th
 
 ![image](lab-report1-images/vscode-ssh-image.png)
 
-If you correctly entered password, this output will appear.
+If you success in login in, this output will appear.
 
 ![image](lab-report1-images/vscode-loginoutput-image.png)
 
 ## Run Some Commands
 **#Note** 
-Now, you can edit the loggined page using some commands.
+Now, you can edit the file using some commands.
 
 * pwb : working directory (current directory)
 * ls  : name of contents
-* cat <file1> <file2>: prints contens of one or more files given by the paths.
+* cat <file1> <file2>: prints contents of one or more files given by the paths.
 * cd  : change directory
 * cd ~: Go to home directory
+* mkdir: make a new directory
 
 In the example below, I created a new directory called “taiki” using “mkdir” command and moved there using “cd.” I also went back to my home directory using “~.”  
-  
 ![image](lab-report1-images/vscode-command-image.png)
