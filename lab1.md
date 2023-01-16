@@ -19,9 +19,15 @@ To use terminal in VSCode, I can click "Terminal" in the menu bar and go on to "
 
 ![image](lab-report1-images/vscode-terminal-image.png)
 
+**#Note**  
 Next, I am goint to access remote commputer using "ssh." SSH represents for Secure Shell, and it allows me to access
+You should type course-specific account to log in. (I struggled with this process because I forgot to replace the "zz" to my own account characters.) After that, you will be required to enter log in password.(this password is the same one to use the ucsd's account.) As a note, you don't have to worry about that the entered passowrd will not be reflected to the screen, because of the security reason. 
 
+![image](lab-report1-images/vscode-ssh-image.png)
 
+If you correctly entered password, this output will appear.
+
+![image](lab-report1-images/vscode-loginoutput-image.png)
 
 ## Run Some Commands
 
