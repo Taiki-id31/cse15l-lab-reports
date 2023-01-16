@@ -30,7 +30,13 @@ If you correctly entered password, this output will appear.
 ![image](lab-report1-images/vscode-loginoutput-image.png)
 
 ## Run Some Commands
+**#Note** 
+Now, you can edit the loggined page using some commands.
 
-![image](lab-report1-images/image2.png)
+*pwb : working directory (current directory)
+*ls  : name of contents
+*cat <file1> <file2>: prints contens of one or more files given by the paths.
+*cd  : change directory
+*cd ~: Go to home directory
 
-
+![image](lab-report1-images/vscode-command-image.png)
