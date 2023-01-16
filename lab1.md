@@ -47,7 +47,7 @@ In the example below, I created a new directory called “taiki” using “mkdi
 <img src="lab-report1-images/vscode-command-image.png" width="75%">
 
 **#Note**  
-To logout the termianl, you can use two ways below.
+To logout the termianl, you can use either of two ways below.
 
 ```  
 Ctrl-D
