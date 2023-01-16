@@ -18,11 +18,11 @@ To use terminal in VSCode, you can click "Terminal" in the menu bar and go on to
 ![image](lab-report1-images/vscode-terminal-image.png)
 
 **#Note**  
-Next, you are going to use "ssh" in the command. SSH represents Secure Shell, which allow you to access a remote computer. You should type a course-specific account to log in. (I struggled with this process because I forgot to replace the "zz" with my account characters.)  
+Next, you are going to use "ssh" in the command. SSH represents Secure Shell, which allow you to access a remote computer. You should type a course-specific account to log in. (I struggled with this process because I forgot to replace the "zz" with my account characters. Also, note that $ originally exists, so you have to write things after it.)  
 ```  
 $ ssh cs15lwi23zz@ieng6.ucsd.edu
 ```   
-After that, you will be required to enter a login password. (this password is the same as using the UCSD account.) As a note, you don't have to worry that the entered characters will not be reflected on the screen; it is because of security reasons. 
+After that, you will be required to enter a login password. (This password is the same as using the UCSD account.) As a note, you don't have to worry that the entered characters does not be reflected on the screen; it is because of security reasons. 
 
 ![image](lab-report1-images/vscode-ssh-image.png)
 
@@ -32,7 +32,7 @@ If you success in login in, this output will appear.
 
 ## Run Some Commands
 **#Note**   
-Now, you can edit the file using some commands.
+Now, you can use the terminal as a client of CSE which is a server. These are examples to run commands at the terminal.
 
 ```  
 * pwb : working directory (current directory)
@@ -47,6 +47,12 @@ In the example below, I created a new directory called “taiki” using “mkdi
 ![image](lab-report1-images/vscode-command-image.png)
 
 **#Note**  
-To logout the page, 
+To logout the termianl, you can use two different ways below.
+
+```  
 Ctrl-D
 Run the command exit
+```  
+
+
+
