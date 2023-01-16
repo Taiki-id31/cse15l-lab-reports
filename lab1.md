@@ -4,18 +4,18 @@
 **#Note**  
 To download the Visual Studio Code, you should go to this website: https://code.visualstudio.com/ and choose the compatible one with your device (ex. Mac). (However, since I have already downloaded it in the CSE 11, I didn't need to do it this time.) 
 
-![image](lab-report1-images/vscode-download-image.png)
+<img src="lab-report1-images/vscode-download-image.png" width="75%">
 
 **#Note**  
 After you download VSCode and open it, it will take you to this kind of screen.
 
-![image](lab-report1-images/vscode-home-image.png)
+<img src="lab-report1-images/vscode-home-image.png" width="75%">
 
 ## Remotely Connecting
 **#Note**  
 To use terminal in VSCode, you can click "Terminal" in the menu bar and go on to "New Terminal." Then, the terminal come up from the bottom up. (If you use Windonws devices, one more step is necessary to install git: **git bash**)  
 
-![image](lab-report1-images/vscode-terminal-image.png)
+<img src="lab-report1-images/vscode-terminal-image.png" width="75%">
 
 **#Note**  
 Next, you are going to use "ssh" in the command. SSH represents Secure Shell, which allow you to access a remote computer. You should type a course-specific account to log in. (I struggled with this process because I forgot to replace the "zz" with my account characters. Also, note that $ originally exists, so you have to write things after it.)  
@@ -24,11 +24,11 @@ $ ssh cs15lwi23zz@ieng6.ucsd.edu
 ```   
 After that, you will be required to enter a login password. (This password is the same as using the UCSD account.) As a note, you don't have to worry that the entered characters does not be reflected on the screen; it is because of security reasons. 
 
-![image](lab-report1-images/vscode-ssh-image.png)
+<img src="lab-report1-images/vscode-ssh-image.png" width="75%">
 
 If you success in login in, this output will appear.
 
-![image](lab-report1-images/vscode-loginoutput-image.png)
+<img src="lab-report1-images/vscode-loginoutput-image.png" width="75%">
 
 ## Run Some Commands
 **#Note**   
@@ -44,7 +44,7 @@ Now, you can use the terminal as a client of CSE which is a server. These are ex
 ```  
 
 In the example below, I created a new directory called “taiki” using “mkdir” command and moved there using “cd.” I also went back to my home directory using “~.”  
-![image](lab-report1-images/vscode-command-image.png)
+<img src="lab-report1-images/vscode-command-image.png" width="75%">
 
 **#Note**  
 To logout the termianl, you can use two ways below.
