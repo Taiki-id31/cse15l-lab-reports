@@ -33,10 +33,11 @@ If you correctly entered password, this output will appear.
 **#Note** 
 Now, you can edit the loggined page using some commands.
 
-*pwb : working directory (current directory)
-*ls  : name of contents
-*cat <file1> <file2>: prints contens of one or more files given by the paths.
-*cd  : change directory
-*cd ~: Go to home directory
+* pwb : working directory (current directory)
+* ls  : name of contents
+* cat <file1> <file2>: prints contens of one or more files given by the paths.
+* cd  : change directory
+* cd ~: Go to home directory
 
+In the example below, I created a new directory called “taiki” using “mkdir” command and moved there using “cd.” I also went back to my home directory using “~.”
 ![image](lab-report1-images/vscode-command-image.png)
