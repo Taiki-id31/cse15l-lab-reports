@@ -32,7 +32,7 @@ If you success in login in, this output will appear.
 
 ## Run Some Commands
 **#Note**   
-Now, you can use the terminal as a client of CSE which is a server. These are examples to run commands at the terminal.
+Now, you can use the terminal as a client of CSE basement which is a server. These are examples to run commands at the terminal.
 
 ```  
 * pwb : working directory (current directory)
