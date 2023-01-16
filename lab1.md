@@ -15,10 +15,9 @@ After I donlowad VSCode and opend it, it took me this home page.
 
 ## Remotely Connecting
 **#Note**  
-To use terminal through VSCode, I clicked "New Terminal" on the menu bar. Then, the terminal came up from the bottom up.  
+To use terminal in VSCode, I should click "Terminal" in the menu bar and go on to "New Terminal." Then, the terminal come up from the bottom up.  
 
 ![image](lab-report1-images/vscode-terminal-image.png)
-
 
 
 
