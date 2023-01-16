@@ -8,16 +8,16 @@ To download the VSCode, I should go to this website and choose the competible so
 ![image](lab-report1-images/vscode-download-image.png)
 
 **#Note**  
-After I donlowaded VSCode and opend it, it took me this home page.  
+After I donlowad VSCode and opend it, it took me this home page.  
 (I think this page is slightly different from one I first installed.)  
 
 ![image](lab-report1-images/vscode-home-image.png)
 
 ## Remotely Connecting
 **#Note**  
-To use terminal on VSCode, I clicked "New Terminal" on the menu bar. Then, the terminal came up from the bottom up.  
+To use terminal through VSCode, I clicked "New Terminal" on the menu bar. Then, the terminal came up from the bottom up.  
 
-![image](lab-report1-images/image1.png)
+![image](lab-report1-images/vscode-terminal-image.png)
 
 
 
