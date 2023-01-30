@@ -10,9 +10,9 @@ The web server StringServer will get a new string and desplay it in a new line. 
 **#Note**  
 This is the code of StringServer, which consists of two classes: StringServerHandler and StringServer.  
   
-Firstly, StringServerHandler is the class to processes the information of the URL. As the default, this class returns (output= ""), and when you added /add-message?s, then the string parameters will be added to the output and it will be displayed. Note that if you add somethig rather that /add-message?s, then it will cause an error.   
+Firstly, StringServerHandler is the class to processes the information of the URL. As the default, this class returns (output= ""), and when you added /add-message?s, then the string parameters will be added to the output and it will be displayed. Note that if you add somethig rather that /add-message?s, then it will cause an error.
   
-Secondly, StringServer is the class to 
+Secondly, StringServer is the class contains main method and start sever using StringServerHandler class and port number. Note that this class requires an input of port number.
     
 ```
 import java.io.IOException;
@@ -51,54 +51,57 @@ class StringServer {
 }
 ```
 
+## Part 2  
+* A failure-inducing input for the buggy program, as a JUnit test and any associated code.
+```
+  @Test 
+	public void testReverseInPlace2() {
+    int[] input1 = { 1, 2, 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3,2,1 }, input1);
+	}
+```
 
-
-
+* An input that doesn’t induce a failure, as a JUnit test and any associated code 
+ ```
+	@Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+``` 
+* The symptom, as the output of running the tests
+  
+  
+* The bug, as the before-and-after code change required to fix it 
+```
+  // Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```    
+  
+                                  
+```
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+  }
+```
+                 
 
 **#Note**  
-After you download VSCode and open it, it will take you to this kind of screen.
-
-<img src="lab-report1-images/vscode-home-image.png" width="75%">
-
-## Part 2
-**#Note**  
-To use terminal in VSCode, you can click "Terminal" in the menu bar and go on to "New Terminal." Then, the terminal come up from the bottom up. (If you use Windonws devices, one more step is necessary to install git: **git bash**)  
-
-<img src="lab-report1-images/vscode-terminal-image.png" width="75%">
-
-**#Note**  
-Next, you are going to use "ssh" in the command. SSH represents Secure Shell, which allow you to access a remote computer. You should type a course-specific account to log in. (I struggled with this process because I forgot to replace the "zz" with my account characters. Also, note that $ originally exists, so you have to write things after it.)  
-```  
-$ ssh cs15lwi23zz@ieng6.ucsd.edu
-```   
-After that, you will be required to enter a login password. (This password is the same as using the UCSD account.) As a note, you don't have to worry that the entered characters does not be reflected on the screen; it is because of security reasons. 
-
-<img src="lab-report1-images/vscode-ssh-image.png" width="75%">
-
-If you success in login in, this output will appear.
-
-<img src="lab-report1-images/vscode-loginoutput-image.png" width="75%">
 
 ## Part 3
 **#Note**   
-Now, you can use the terminal as a client of CSE basement which is a server. These are examples to run commands at the terminal.
 
-```  
-* pwb : working directory (current directory)
-* ls  : name of contents
-* cat <file1> <file2>: prints contents of one or more files given by the paths.
-* cd  : change directory
-* cd ~: Go to home directory
-* mkdir: make a new directory
-```  
-
-In the example below, I created a new directory called “taiki” using “mkdir” command and moved there using “cd.” I also went back to my home directory using “~.”  
-<img src="lab-report1-images/vscode-command-image.png" width="75%">
-
-**#Note**  
-To logout the termianl, you can use either of two ways below.
-
-```  
-Ctrl-D
-Run the command exit
-```  
