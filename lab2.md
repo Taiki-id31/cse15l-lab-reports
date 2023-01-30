@@ -55,7 +55,7 @@ class StringServer {
 * A failure-inducing input for the buggy program, as a JUnit test and any associated code.
 ```
   @Test 
-  public void testReverseInPlace2() {
+  public void testReverseInPlace() {
       int[] input1 = { 1, 2, 3 };
       ArrayExamples.reverseInPlace(input1);
       assertArrayEquals(new int[]{ 3,2,1 }, input1);
@@ -71,9 +71,12 @@ class StringServer {
       assertArrayEquals(new int[]{ 3 }, input1);
   }
 ``` 
-* The symptom, as the output of running the tests
-  
-  
+* The symptom, as the output of running the tests       
+**#Note**    
+When you use input1 = {3} as an input, the testReverseInPlace method returns int[]{3}, which alins with the expected value. On the other hand, when you use input1 = {1, 2, 3} as an input, the actual returned value is int[]{3, 2, 3}, against the expected value is {3, 2, 1}.
+<img src="lab-report2-image/no-symptom.png" width="75%">  
+<img src="lab-report2-image/symptom.png" width="75%">  
+
 * The bug, as the before-and-after code change required to fix it 
 ```
   // Returns a *new* array with all the elements of the input array in reversed
@@ -85,9 +88,8 @@ class StringServer {
       }
       return arr;
   }
-```    
-  
-                                  
+```      
+	
 ```
   // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
@@ -99,7 +101,6 @@ class StringServer {
   }
 ```
                  
-
 **#Note**  
 
 ## Part 3
