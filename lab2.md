@@ -1,9 +1,49 @@
-# Lab Report 1   Taiki Yoshino (A17492011)
+# Lab Report 2 - Servers and Bugs (Week 3)  Taiki Yoshino (A17492011)
 
-## Installing VSCode
+## Part 1
 **#Note**  
-To download the Visual Studio Code, you should go to this website: https://code.visualstudio.com/ and choose the compatible one with your device (ex. Mac). (However, since I have already downloaded it in the CSE 11, I didn't need to do it this time.) 
+The web server StringServer described below will get a new string and desplay it in a new line.
 
+```
+import java.io.IOException;
+import java.net.URI;
+
+class StringServerHandler implements URLHandler {
+    String output = "";
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return output;
+        } 
+        else {
+            System.out.println("Path: " + url.getPath());
+            if (url.getPath().contains("/add-message")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    output += parameters[1].toString() + "\n";
+                    return String.format(output);
+                }
+            }
+            return "404 Not Found!";
+        }
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+        int port = Integer.parseInt(args[0]);
+        Server.start(port, new StringServerHandler());
+    }
+}
+```
+
+
+
+<img src="lab-report1-images/vscode-download-image.png" width="75%">
 <img src="lab-report1-images/vscode-download-image.png" width="75%">
 
 **#Note**  
@@ -11,7 +51,7 @@ After you download VSCode and open it, it will take you to this kind of screen.
 
 <img src="lab-report1-images/vscode-home-image.png" width="75%">
 
-## Remotely Connecting
+## Part 2
 **#Note**  
 To use terminal in VSCode, you can click "Terminal" in the menu bar and go on to "New Terminal." Then, the terminal come up from the bottom up. (If you use Windonws devices, one more step is necessary to install git: **git bash**)  
 
@@ -30,7 +70,7 @@ If you success in login in, this output will appear.
 
 <img src="lab-report1-images/vscode-loginoutput-image.png" width="75%">
 
-## Run Some Commands
+## Part 3
 **#Note**   
 Now, you can use the terminal as a client of CSE basement which is a server. These are examples to run commands at the terminal.
 
