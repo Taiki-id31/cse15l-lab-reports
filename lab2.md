@@ -77,7 +77,9 @@ When you use input1 = {3} as an input, the testReverseInPlace method returns int
 <img src="lab-report2-image/no-symptom.png" width="75%">  
 <img src="lab-report2-image/symptom.png" width="75%">  
 
-* The bug, as the before-and-after code change required to fix it 
+* The bug, as the before-and-after code change required to fix it  
+
+The code Before Changing.
 ```
   // Returns a *new* array with all the elements of the input array in reversed
   // order
@@ -88,8 +90,11 @@ When you use input1 = {3} as an input, the testReverseInPlace method returns int
       }
       return arr;
   }
-```      
-	
+```  
+**#Note**  
+This bug occurred because the method uses the input array itself in the process to reverse the input. When the method swap an element, the updated array will still be regarded as the original input array. To avoid this problem, we should create a new varible to store the element temporaly, and make a change at two indexes at the same time.  
+			    
+The code After Changing.	
 ```
   // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
@@ -99,12 +104,10 @@ When you use input1 = {3} as an input, the testReverseInPlace method returns int
           arr[arr.length - i - 1] = temp;
       }
   }
-```
-                 
-**#Note**  
+```               
 
+	
 ## Part 3
 In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.
-	
 **#Note**   
 
