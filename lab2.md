@@ -2,8 +2,18 @@
 
 ## Part 1
 **#Note**  
-The web server StringServer described below will get a new string and desplay it in a new line.
+The web server StringServer will get a new string and desplay it in a new line. For example, as the two pictures shows, if you want to display "first_message" on the web page, you can add /add-message?s=<string> at the end of the URL, replacing <string> as "first_message". Also, you can add another message by iterating the same process or changing the message.
 
+<img src="lab-report2-image/first_message.png" width="75%">
+<img src="lab-report2-image/second_message.png" width="75%">
+
+**#Note**  
+This is the code of StringServer, which consists of two classes: StringServerHandler and StringServer.  
+  
+Firstly, StringServerHandler is the class to processes the information of the URL. As the default, this class returns (output= ""), and when you added /add-message?s, then the string parameters will be added to the output and it will be displayed. Note that if you add somethig rather that /add-message?s, then it will cause an error.   
+  
+Secondly, StringServer is the class to 
+    
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -43,8 +53,7 @@ class StringServer {
 
 
 
-<img src="lab-report1-images/vscode-download-image.png" width="75%">
-<img src="lab-report1-images/vscode-download-image.png" width="75%">
+
 
 **#Note**  
 After you download VSCode and open it, it will take you to this kind of screen.
