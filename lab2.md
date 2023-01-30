@@ -55,21 +55,21 @@ class StringServer {
 * A failure-inducing input for the buggy program, as a JUnit test and any associated code.
 ```
   @Test 
-	public void testReverseInPlace2() {
-    int[] input1 = { 1, 2, 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3,2,1 }, input1);
-	}
+  public void testReverseInPlace2() {
+      int[] input1 = { 1, 2, 3 };
+      ArrayExamples.reverseInPlace(input1);
+      assertArrayEquals(new int[]{ 3,2,1 }, input1);
+  }
 ```
 
 * An input that doesn’t induce a failure, as a JUnit test and any associated code 
  ```
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
-	}
+  @Test 
+  public void testReverseInPlace() {
+      int[] input1 = { 3 };
+      ArrayExamples.reverseInPlace(input1);
+      assertArrayEquals(new int[]{ 3 }, input1);
+  }
 ``` 
 * The symptom, as the output of running the tests
   
@@ -79,11 +79,11 @@ class StringServer {
   // Returns a *new* array with all the elements of the input array in reversed
   // order
   static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
-    }
-    return arr;
+      int[] newArray = new int[arr.length];
+      for(int i = 0; i < arr.length; i += 1) {
+          arr[i] = newArray[arr.length - i - 1];
+      }
+      return arr;
   }
 ```    
   
@@ -91,11 +91,11 @@ class StringServer {
 ```
   // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length/2; i += 1) {
-      int temp = arr[i];
-      arr[i] = arr[arr.length - i - 1];
-      arr[arr.length - i - 1] = temp;
-    }
+      for(int i = 0; i < arr.length/2; i += 1) {
+          int temp = arr[i];
+          arr[i] = arr[arr.length - i - 1];
+          arr[arr.length - i - 1] = temp;
+      }
   }
 ```
                  
@@ -103,5 +103,7 @@ class StringServer {
 **#Note**  
 
 ## Part 3
+In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.
+	
 **#Note**   
 
