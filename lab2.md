@@ -79,20 +79,15 @@ When you use ```input1 = {3}``` as an input,```testReverseInPlace``` method retu
 
 The code before changing.
 ```
-  // Returns a *new* array with all the elements of the input array in reversed
-  // order
-  static int[] reversed(int[] arr) {
-      int[] newArray = new int[arr.length];
+   static void reverseInPlace(int[] arr) {
       for(int i = 0; i < arr.length; i += 1) {
-          arr[i] = newArray[arr.length - i - 1];
+        arr[i] = arr[arr.length - i - 1];
       }
-      return arr;
-  }
+   }
 ```  
 
 The code after changing.	
 ```
-  // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
       for(int i = 0; i < arr.length/2; i += 1) {
           int temp = arr[i];
@@ -103,7 +98,7 @@ The code after changing.
 ```               
    
 **#Note**  
-This bug occurred because the method uses the input array itself in the process to reverse the input. When the method swap an element, the updated array will still be regarded as the original input array. To avoid this problem, we should create a new varible to store the element temporaly, and make a change at two indexes at the same time.  
+This bug occurred because ```reverseInPlace``` method uses the input array ```arr``` itself in the process to reverse the sequence. For example, when the method swaps an element, the updated array ```arr``` will still be regarded as the original input array. To avoid this problem, as the code above shows, you can create a new variable ```temp``` to store the element, which will be swapped and make a change at the two indexes in the same iteration.  
 	
 ## Part 3
 In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.  
