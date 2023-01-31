@@ -98,9 +98,10 @@ The code after changing.
 ```               
    
 **#Note**  
-This bug occurred because ```reverseInPlace``` method uses the input array ```arr``` itself in the process to reverse the sequence. For example, when the method swaps an element, the updated array ```arr``` will still be regarded as the original input array. To avoid this problem, as the code above shows, you can create a new variable ```temp``` to store the element, which will be swapped and make a change at the two indexes in the same iteration.  
+This bug occurred because ```reverseInPlace``` method uses the input array ```arr``` itself in the process to reverse the sequence. For example, when the method swaps an element, the updated array ```arr``` will still be regarded as the original input array. To avoid this problem, as the code above shows, you can create a new variable ```temp``` to store the element that will be swapped, and make a change at the two indexes in the same iteration.  
 	
 ## Part 3
 In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.  
 **#Note**   
+Before week 3 in the lab, I had used JUnit assertions to compare two strings or two integers in CSE12's programming assignments. However, I wondered how to compare double or float data types because these types of data are not determined exactly. My TA informed me that I could use the "assertEquals(double expected, double actual, double delta)" method to resolve this issue. The delta represents the allowable difference between the two values. If the difference between (expected - actual) is less than or equal to delta, the method returns true, otherwise it returns false. I learned that it is important to be careful when setting delta when testing floating-point numbers, as it can lead to bugs.
 
