@@ -8,7 +8,7 @@ The StringServer gets a new string from the URL in the format ```/add-message?s=
 <img src="lab-report2-image/second_message.png" width="75%">
 
 **#Note**  
-The StringServer file consists of two classes: StringServerHandler and StringServer. First, StringServerHandler processes the string information of the URL. As default, this class returns ```output= ""```. And, when you input new string parameters in the format ```/add-message?s=<string>```, the parameter will be added at the end of the String sequence of the ```output```. Note　that if you add something rather than/add-message?s, it will cause an error. Second, StringServer contains the main method and starts sever using StringServerHandler class and port number. Note that this class requires an input of port number.
+The StringServer file consists of two classes: StringServerHandler and StringServer. First, StringServerHandler processes the string information of a URL. As default, this class returns ```output= ""```. And, when you input new string parameters in the format ```/add-message?s=<string>```, ```handleRequest(URI uri)``` method extracts the parameter and adds it at the end of the String sequence of ```output```. Note that if you add or edit the URL in rather than format ```/add-message?s=<string>```, it will display the error message "404 Not Found!". Second, StringServer contains the main method and has a role in starting to sever using ```StringServerHandler``` class and a user-determined port number. Note that you must input the port number when you execute the code; otherwise, it will return the message "Missing port number! Try any number between 1024 to 49151."
     
 ```
 import java.io.IOException;
@@ -47,8 +47,8 @@ class StringServer {
 }
 ```
 
-## Part 2  
-* A failure-inducing input for the buggy program, as a JUnit test and any associated code.
+## Part 2  Choose one of the bugs from lab 3.
+* **A failure-inducing input for the buggy program, as a JUnit test and any associated code.**
 ```
   @Test 
   public void testReverseInPlace() {
@@ -58,7 +58,7 @@ class StringServer {
   }
 ```
 
-* An input that doesn’t induce a failure, as a JUnit test and any associated code 
+* **An input that doesn’t induce a failure, as a JUnit test and any associated code**  
  ```
   @Test 
   public void testReverseInPlace() {
@@ -67,15 +67,17 @@ class StringServer {
       assertArrayEquals(new int[]{ 3 }, input1);
   }
 ``` 
-* The symptom, as the output of running the tests       
-**#Note**    
-When you use input1 = {3} as an input, the testReverseInPlace method returns int[]{3}, which alins with the expected value. On the other hand, when you use input1 = {1, 2, 3} as an input, the actual returned value is int[]{3, 2, 3}, against the expected value is {3, 2, 1}.
+* **The symptom, as the output of running the tests**         
 <img src="lab-report2-image/no-symptom.png" width="75%">  
 <img src="lab-report2-image/symptom.png" width="75%">  
 
-* The bug, as the before-and-after code change required to fix it  
+**#Note**   
+When you use ```input1 = {3}``` as an input,```testReverseInPlace``` method returns ```{3}```, which alins with the expected value. On the other hand, when you use ```input1 = {1, 2, 3}``` as an input, the actual returned value is ```{3, 2, 3}```, while the expected value is ```{3, 2, 1}```.
+   
+   
+* **The bug, as the before-and-after code change required to fix it**  
 
-The code Before Changing.
+The code before changing.
 ```
   // Returns a *new* array with all the elements of the input array in reversed
   // order
@@ -87,10 +89,8 @@ The code Before Changing.
       return arr;
   }
 ```  
-**#Note**  
-This bug occurred because the method uses the input array itself in the process to reverse the input. When the method swap an element, the updated array will still be regarded as the original input array. To avoid this problem, we should create a new varible to store the element temporaly, and make a change at two indexes at the same time.  
-			    
-The code After Changing.	
+
+The code after changing.	
 ```
   // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
@@ -101,7 +101,9 @@ The code After Changing.
       }
   }
 ```               
-
+   
+**#Note**  
+This bug occurred because the method uses the input array itself in the process to reverse the input. When the method swap an element, the updated array will still be regarded as the original input array. To avoid this problem, we should create a new varible to store the element temporaly, and make a change at two indexes at the same time.  
 	
 ## Part 3
 In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.  
