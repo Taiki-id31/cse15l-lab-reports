@@ -2,17 +2,13 @@
 
 ## Part 1
 **#Note**  
-The web server StringServer will get a new string and desplay it in a new line. For example, as the two pictures shows, if you want to display "first_message" on the web page, you can add /add-message?s=<string> at the end of the URL, replacing <string> as "first_message". Also, you can add another message by iterating the same process or changing the message.
+The StringServer gets a new string from the URL in the format ```/add-message?s=<string>```, and display it in a new line. For example, as the first picture shows, if you want to display "first_message" on the web page, you can add ```/add-message?s=<string>``` at the end of the URL and replace ```<string>``` as "first_message." Also, the second picture shows that you can add a new message below the first message by iterating the same process.
 
 <img src="lab-report2-image/first_message.png" width="75%">
 <img src="lab-report2-image/second_message.png" width="75%">
 
 **#Note**  
-This is the code of StringServer, which consists of two classes: StringServerHandler and StringServer.  
-  
-Firstly, StringServerHandler is the class to processes the information of the URL. As the default, this class returns (output= ""), and when you added /add-message?s, then the string parameters will be added to the output and it will be displayed. Note that if you add somethig rather that /add-message?s, then it will cause an error.
-  
-Secondly, StringServer is the class contains main method and start sever using StringServerHandler class and port number. Note that this class requires an input of port number.
+The StringServer file consists of two classes: StringServerHandler and StringServer. First, StringServerHandler processes the string information of the URL. As default, this class returns ```output= ""```. And, when you input new string parameters in the format ```/add-message?s=<string>```, the parameter will be added at the end of the String sequence of the ```output```. Note　that if you add something rather than/add-message?s, it will cause an error. Second, StringServer contains the main method and starts sever using StringServerHandler class and port number. Note that this class requires an input of port number.
     
 ```
 import java.io.IOException;
@@ -108,6 +104,6 @@ The code After Changing.
 
 	
 ## Part 3
-In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.
+In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.  
 **#Note**   
 
