@@ -116,6 +116,6 @@ Output
 
 
 ## References 
-I referred to the following site regarding the four grep options.
+I referred to the following site about the four grep options and their usages.  
 https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
 
