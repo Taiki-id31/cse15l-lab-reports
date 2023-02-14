@@ -1,7 +1,57 @@
 # Lab Report 3 - Researching Commands (Week 5)  Taiki Yoshino (A17492011)
 
 ## Option1: Recursive Search using ```grep -r```
+**Description**  
+```grep -r``` is an option to find all files that contain specified strings from the current directory and its sub-directory. The default ```grep``` command check only one specified file so you have to visit every file, but ```grep -r```allow you to search files recursively.
+  
+**Example1-1**  
+
+
+**Example1-2** 
+
+## Option2: Display file names which file matches specified patterns using ```grep -l``` 
+**Description**  
+```grep -l``` is an option to display only the file names which matches specified patterns. 
+
+**Example2-1**  
+
+
+**Example2-2** 
+
+
+## Option3: Count the number of matches using ```grep -c```
+**Description**  
+```grep -c```is an option to count how many lines matches the given pattern/string.
+
+**Example3-1**  
+
+
+**Example3-2** 
+
+
+## Option4: Display lines around the matches using ```grep -A,B,C```  
+**Description**   
+```grep -A,B,C```is an option to display the matching lines and also the lines before/after/around the match.
+
+**Example4-1**  
+
+
+**Example4-2** 
+
+
+
+
+
+
+
+
+
+# Lab Report 3 - Researching Commands (Week 5)  Taiki Yoshino (A17492011)
+
+## Option1: Recursive Search using ```grep -r```
 **Description (what it’s doing and why it’s useful.)**  
+```grep -r``` is an option to find all files that contain specified strings from the current directory and its sub-directory. The default ```grep``` command check only one specified file, but ```grep -r```can search recursively so you do not have to visit every file.
+
 The StringServer gets a new string from the URL in the format ```/add-message?s=<string>```, and display it in a new line. For example, as the first picture shows, if you want to display "first_message" on the web page, you can add ```/add-message?s=<string>``` at the end of the URL and replace ```<string>``` as "first_message." Also, the second picture shows that you can add a new message below the first message by iterating the same process.
 
 <img src="lab-report2-image/first_message.png" width="75%">
