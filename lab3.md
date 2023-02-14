@@ -51,28 +51,68 @@ non-fiction/OUP/Abernathy/ch9.txt
 ...
 ```
 
-
 ## Option3: Count the number of matches using ```grep -c```
 **Description**  
 ```grep -c```is an option to count how many lines matches the given pattern/string.
 
-**Example3-1**  
+**Example3-1**    
+Input   
+```$ grep -c "Lucayans" travel_guides/berlitz2/Bahamas-History.txt``` 
 
+Output  
+```
+2
+```
 
-**Example3-2** 
+**Example3-2**   
+Input   
+```$ grep -c -r "Lucayans"``` 
 
+Output  
+```
+non-fiction/OUP/Abernathy/ch1.txt:0
+non-fiction/OUP/Abernathy/ch14.txt:0
+non-fiction/OUP/Abernathy/ch15.txt:0
+...
+```
 
-## Option4: Display lines around the matches using ```grep -A,B,C```  
+## Option4: Case insensitive search using ```grep -i```  
 **Description**   
-```grep -A,B,C```is an option to display the matching lines and also the lines before/after/around the match.
+```grep -i```is an option to search the maching lines case insensitively. For example, "the" and "The" are regarded as the same.
 
 **Example4-1**  
+Input   
+```$ grep -c "cuba" travel_guides/berlitz2/Bahamas-History.txt``` 
 
+Output  
+```
+0
+```
+
+Input   
+```$ grep -c -i "cuba" travel_guides/berlitz2/Bahamas-History.txt``` 
+
+Output  
+```
+5
+```
 
 **Example4-2** 
+Input   
+```$ grep -c "the" travel_guides/berlitz2/Bahamas-History.txt``` 
 
+Output  
+```
+30
+```
 
+Input   
+```$ grep -c -i "the" travel_guides/berlitz2/Bahamas-History.txt``` 
 
+Output  
+```
+32
+```
 
 
 
