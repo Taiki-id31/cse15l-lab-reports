@@ -2,10 +2,10 @@
 
 ## Option1: Recursive Search using ```grep -r```
 **Description**  
-```grep -r``` is an option to find all files that contain specified strings from the current directory and its sub-directory. The default ```grep``` command check only one specified file so you have to visit every file, but ```grep -r```allow you to search files recursively.
+```grep -r``` is an option to find all files that contain specified strings from the current directory and its sub-directory. The default ```grep``` command check only one specified file so you have to visit every file, but ```grep -r```allow you to search files recursively. The Ex1-1's command outputs the file names and sentences which includes "Lucayans" from all sub-directories in ```./written_2```. You can also specifies two strings to search as the Ex1-2 shows. This command searches files which contains 'seafood' or 'Japan.'
   
-**Example1-1**  
-Input   
+**Ex1-1**  
+Command   
 ```$ grep -r "Lucayans"``` 
   
 Output  
@@ -14,8 +14,8 @@ travel_guides/berlitz2/Bahamas-History.txt:Centuries before the arrival of Colum
 travel_guides/berlitz2/Bahamas-History.txt:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
 
-**Example1-2** 
-Input   
+**Ex1-2** 
+Command   
 ```$ grep -r 'seafood\|Japan'``` 
    
 Output  
@@ -28,10 +28,10 @@ non-fiction/OUP/Abernathy/ch15.txt:For textiles, with their high capital costs, 
 
 ## Option2: Display file names which file matches specified patterns using ```grep -l``` 
 **Description**  
-```grep -l``` is an option to display only the file names which matches specified patterns. 
+```grep -l``` is an option to display only the file names which matches specified patterns. If you want to know only filenames of the output of Ex1-1 and Ex1-2, you can use ```-l``` like the Ex2-1 and Ex2-2. Note that Ex2-1's output is only one file against there were two outputs in Ex1-1. This is because 'Lucayans' apperes two times in Bahamas-History.txt. Therefore, ```-l``` option is helpful when you want to know how many files have 'Lucayans' excluding duplicates.
 
-**Example2-1**  
-Input   
+**Ex2-1**  
+Command   
 ```$ grep -l -r 'Lucayans'``` 
 
 Output  
@@ -39,8 +39,8 @@ Output
 travel_guides/berlitz2/Bahamas-History.txt
 ```
 
-**Example2-2** 
-Input   
+**Ex2-2** 
+Command   
 ```$ grep -l -r 'seafood\|Japan'``` 
 
 Output  
@@ -53,10 +53,10 @@ non-fiction/OUP/Abernathy/ch9.txt
 
 ## Option3: Count the number of matches using ```grep -c```
 **Description**  
-```grep -c```is an option to count how many lines matches the given pattern/string.
+```grep -c```is an option to count how many lines matches the given pattern/string. Ex3-1 command demonstrates how many times "Lucayans" appears in the travel_guides/berlitz2/Bahamas-History.txt, and its output supports the previous reasoning that there are two "Lucayans" in the same files. You can also search the strings in each files recursively using ```-r``` as the Ex3-2 shows.
 
-**Example3-1**    
-Input   
+**Ex3-1**    
+Command   
 ```$ grep -c "Lucayans" travel_guides/berlitz2/Bahamas-History.txt``` 
 
 Output  
@@ -64,8 +64,8 @@ Output
 2
 ```
 
-**Example3-2**   
-Input   
+**Ex3-2**   
+Command   
 ```$ grep -c -r "Lucayans"``` 
 
 Output  
@@ -78,10 +78,10 @@ non-fiction/OUP/Abernathy/ch15.txt:0
 
 ## Option4: Case insensitive search using ```grep -i```  
 **Description**   
-```grep -i```is an option to search the maching lines case insensitively. For example, "the" and "The" are regarded as the same.
+```grep -i```is an option to search the maching lines case insensitively. For example, "the" and "The" are regarded as the same. Ex4-1 shows that if you consider the case regarding "cuba," there is no matches, but if you don't care the case, there are five mathces. Likewise, the matches regarding 'The" increases if you do search case insensitvely.
 
-**Example4-1**  
-Input   
+**Ex4-1**  
+Command   
 ```$ grep -c "cuba" travel_guides/berlitz2/Bahamas-History.txt``` 
 
 Output  
@@ -89,7 +89,7 @@ Output
 0
 ```
 
-Input   
+Command   
 ```$ grep -c -i "cuba" travel_guides/berlitz2/Bahamas-History.txt``` 
 
 Output  
@@ -97,8 +97,8 @@ Output
 5
 ```
 
-**Example4-2** 
-Input   
+**Ex4-2** 
+Command   
 ```$ grep -c "the" travel_guides/berlitz2/Bahamas-History.txt``` 
 
 Output  
@@ -106,7 +106,7 @@ Output
 30
 ```
 
-Input   
+Command   
 ```$ grep -c -i "the" travel_guides/berlitz2/Bahamas-History.txt``` 
 
 Output  
