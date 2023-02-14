@@ -53,7 +53,7 @@ non-fiction/OUP/Abernathy/ch9.txt
 
 ## Option3: Count the number of matches using ```grep -c```
 **Description**  
-```grep -c```is an option to count how many lines match the given pattern/string. Ex3-1 command demonstrates how many times "Lucayans" appears in the travel_guides/berlitz2/Bahamas-History.txt, and its output supports the previous reasoning that there are two "Lucayans" in the same files. You can also search the strings in each file recursively using ```-r``` as Ex3-2 shows.
+```grep -c```is an option to count how many lines match the given pattern or string. Ex3-1 command demonstrates how many times "Lucayans" appears in the ```travel_guides/berlitz2/Bahamas-History.txt```, and its output supports the previous reasoning that there are two "Lucayans" in the same files. You can also search the strings in each file recursively using ```-r``` as Ex3-2 shows.
 
 **Ex3-1**      
 Command   
