@@ -2,7 +2,7 @@
 
 ## Option1: Recursive Search using ```grep -r```
 **Description**  
-```grep -r``` is an option to find all files that contain specified strings from the current directory and its sub-directory. The default ```grep``` command check only one specified file so you have to visit every file, but ```grep -r```allow you to search files recursively. The Ex1-1's command outputs the file names and sentences which includes "Lucayans" from all sub-directories in ```./written_2```. You can also specifies two strings to search as the Ex1-2 shows. This command searches files which contains 'seafood' or 'Japan.'
+```grep -r``` is an option to find all files that contain specified strings from the current directory and its sub-directory. The default ```grep``` command checks only one specified file, so you have to visit every file, but ```grep -r```allows you to search files recursively. The Ex1-1's command outputs the file names and sentences, which include "Lucayans" from all sub-directories in ```./written_2```. You can also specify two strings to search, as Ex1-2 shows. This command searches files that contain 'seafood' or 'Japan.'
   
 **Ex1-1**  
 Command   
@@ -28,7 +28,7 @@ non-fiction/OUP/Abernathy/ch15.txt:For textiles, with their high capital costs, 
 
 ## Option2: Display file names which file matches specified patterns using ```grep -l``` 
 **Description**  
-```grep -l``` is an option to display only the file names which matches specified patterns. If you want to know only filenames of the output of Ex1-1 and Ex1-2, you can use ```-l``` like the Ex2-1 and Ex2-2. Note that Ex2-1's output is only one file against there were two outputs in Ex1-1. This is because 'Lucayans' apperes two times in Bahamas-History.txt. Therefore, ```-l``` option is helpful when you want to know how many files have 'Lucayans' excluding duplicates.
+```grep -l``` is an option to display only the file names which match specified patterns. If you want to know only the filenames of the output of Ex1-1 and Ex1-2, you can use ```-l``` like the Ex2-1 and Ex2-2. Note that Ex2-1's output is only one file while there are two outputs in Ex1-1. This is because 'Lucayans' appears two times in Bahamas-History.txt. Therefore, ```-l``` option is helpful when you want to know how many files have 'Lucayans' excluding duplicates.
 
 **Ex2-1**  
 Command   
@@ -53,7 +53,7 @@ non-fiction/OUP/Abernathy/ch9.txt
 
 ## Option3: Count the number of matches using ```grep -c```
 **Description**  
-```grep -c```is an option to count how many lines matches the given pattern/string. Ex3-1 command demonstrates how many times "Lucayans" appears in the travel_guides/berlitz2/Bahamas-History.txt, and its output supports the previous reasoning that there are two "Lucayans" in the same files. You can also search the strings in each files recursively using ```-r``` as the Ex3-2 shows.
+```grep -c```is an option to count how many lines match the given pattern/string. Ex3-1 command demonstrates how many times "Lucayans" appears in the travel_guides/berlitz2/Bahamas-History.txt, and its output supports the previous reasoning that there are two "Lucayans" in the same files. You can also search the strings in each file recursively using ```-r``` as Ex3-2 shows.
 
 **Ex3-1**    
 Command   
@@ -78,7 +78,7 @@ non-fiction/OUP/Abernathy/ch15.txt:0
 
 ## Option4: Case insensitive search using ```grep -i```  
 **Description**   
-```grep -i```is an option to search the maching lines case insensitively. For example, "the" and "The" are regarded as the same. Ex4-1 shows that if you consider the case regarding "cuba," there is no matches, but if you don't care the case, there are five mathces. Likewise, the matches regarding 'The" increases if you do search case insensitvely.
+```grep -i```is an option to search the matching lines case-insensitively. For example, "the" and "The" are regarded as the same. Ex4-1 shows that if you consider the case regarding "cuba," there are no matches, but if you don't care about the case, there are five matches. Likewise, the matches regarding 'The" increases if you do search case-insensitvely.
 
 **Ex4-1**  
 Command   
