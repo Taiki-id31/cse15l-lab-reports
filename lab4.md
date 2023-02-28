@@ -1,12 +1,44 @@
-# Lab Report 3 - Researching Commands (Week 5)  Taiki Yoshino (A17492011)
+# Lab Report 4 - (Week 7)  Taiki Yoshino (A17492011)
 
-## Option1: Recursive Search using ```grep -r```
+## Step4: Log into ieng6   
+Command   
+```$ssh <Space> <Ctrl-R> c <Return>``` 
+
+autocompletion
+ssh cs15lwi23aht@ieng6.ucsd.edu
+
+
+## Step5: Clone your fork of the repository from your Github account 
+Command   
+```$git <Space> clone <Command-V> ``` 
+
+git clone https://github.com/Taiki-id31/lab7.git
+
+
+## Step6: Run the tests, demonstrating that they fail
+Command   
+```$cd lab7 ``` 
+```$<Ctrl-R> javac <Return> ``` 
+```$<Ctrl-R> java <up> <up> <Return> ``` 
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+
+
+
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+
+git clone https://github.com/Taiki-id31/lab7.git
+
+
+## Step7: Edit the code file to fix the failing test
+```$nano  ListExamples.java``` 
+
+
+
+
 **Description**  
 ```grep -r``` is an option to find all files that contain specified strings from the current directory and its sub-directory. The default ```grep``` command checks only one specified file, so you have to visit every file, but ```grep -r```allows you to search files recursively. The Ex1-1's command outputs the file names and sentences, which include "Lucayans" from all sub-directories in ```./written_2```. You can also specify two strings to search, as Ex1-2 shows. This command searches files that contain 'seafood' or 'Japan.'
   
-**Ex1-1**    
-Command   
-```$ grep -r "Lucayans"``` 
+
   
 Output  
 ```
