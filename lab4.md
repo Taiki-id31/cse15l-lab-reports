@@ -8,10 +8,9 @@ Executed Command
 ```$ssh cs15lwi23aht@ieng6.ucsd.edu``` 
 
 Note:  
-```<Ctrl-R>``` enables to access command history. Since I typed ```$ssh cs15lwi23aht@ieng6.ucsd.edu``` multiple times in the past, ```<Ctrl-R> c``` automatically convert it into ```cs15lwi23aht@ieng6.ucsd.edu```.
+```<Ctrl-R>``` enables to access command history. Since I have typed ```$ssh cs15lwi23aht@ieng6.ucsd.edu``` several times, ```<Ctrl-R> c``` can automatically convert it into ```cs15lwi23aht@ieng6.ucsd.edu```.
 
 <img src="lab-report4-image/ssh-login.png" width="40%">
-
 
 ## Step5: Clone your fork of the repository from your Github account 
 Entered command   
@@ -21,7 +20,7 @@ Executed Command
 ```$git clone https://github.com/Taiki-id31/lab7.git```
 
 Note:  
-I first go to the github page of the forked file, and copy the ssh key. Afterwards, go back to the terminal and type ```$git clone ``` and the copied ssh-key using ```<Command-V>```. 
+I first go to the GitHub page of the forked file and copy the ssh key. Afterward, go back to the terminal and type ```$git clone ``` and the copied ssh-key using ```<Command-V>```. 
 
 <img src="lab-report4-image/ssh-link.png" width="60%"> 
 <img src="lab-report4-image/git-clone.png" width="60%">
@@ -31,7 +30,7 @@ Entered & Executed command
 ```$cd lab7 ``` 
 
 Note:  
-Since the lab file is cloned the home directory, I have to move to the lab7 using cd commad. 
+Since the lab file is cloned in the home directory, I have to move to lab7 using cd command. 
 
 Entered command    
 ```$<Ctrl-R> javac <Return> ``` 
@@ -46,7 +45,7 @@ Executed Command
 ```$java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests```
 
 Note:  
-Above the two commands do compiling and executing the files. In the both commands, I used ```$<Ctrl-R>``` to search the command from the history.
+The two commands above conduct compiling and executing the files. In both commands, I used ```$<Ctrl-R>``` to search the command from the history.
 
 <img src="lab-report4-image/error.png" width="60%"> 
 
@@ -55,7 +54,7 @@ Entered and Executed command
 ```$nano  ListExamples.java```    
 
 Note:   
-I can use nano command to open and edit the specified file. Since the error in the step6 is caused by ListExamples.java, I specidied the file. As the image below shows, the bug is due to that the index2 is not correctly updated, I rewrite the index1 into index2. 
+I can use nano command to open and edit the specified file. Since the error in step6 is caused by ListExamples.java, I specified the file. As the image below shows, the bug is due to the index2 is not correctly updated, and I rewrite the index1 into index2. 
 
 <img src="lab-report4-image/nano.png" width="60%">  
 
@@ -63,7 +62,7 @@ I can use nano command to open and edit the specified file. Since the error in t
 
 ```<Ctrl-O> <Return> <Ctrl-X>``` 
 Note:   
-After edtiting the file, I can save the change using ```<Ctrl-O> ``` and exit the editing screan using ```<Ctrl-X>```.
+After editing the file, I can save the change using ```<Ctrl-O> ``` and exit the editing screen using ```<Ctrl-X>```.
 
 ## Step8: Run the tests, demonstrating that they now succeed
 Entered command  
@@ -79,7 +78,7 @@ Executed Command
 ```$java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests```
 
 Note:   
-I recompiled the file and executed it again using the same commands as I used before. As the below picture shows, the problem was resolved.
+I recompiled the file and executed it again using the same commands I used. As the below picture shows, the problem was resolved.
 
 <img src="lab-report4-image/succeed.png" width="60%">   
 
@@ -91,13 +90,13 @@ Executed Command
 ```$git add ListExamples.java ```   
 
 Note:   
-I am going to commit and push the changes to the git. To begin with, I have to specify which file I edited using ```$git add``` command, and copy and paste the file name of ListExamples.java using ```<tab>``` and ```<Ctrl-V>```.
+I am going to commit and push the changes to git. To begin with, I have to specify which file I edited using ```$git add``` command and copy and paste the file name of ListExamples.java using ```<tab>``` and ```<Ctrl-V>```.
 
 Entered and Executed command   
 ```$git commit -m "commit"```      
 
 Note:   
-I should type the commit command with some message. This time, I used "commit" as a message.
+I have to use the commit command with some message. This time, I used "commit" as a message.
 
 <img src="lab-report4-image/commit.png" width="60%">  
 
