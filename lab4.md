@@ -60,8 +60,8 @@ I can use nano command to open and edit the specified file. Since the error in s
 
 <img src="lab-report4-image/file-edit.png" width="60%">  
 
-```<Ctrl-O> <Return> <Ctrl-X>``` 
-Note:   
+```<Ctrl-O> <Return> <Ctrl-X>```   
+Note:    
 After editing the file, I can save the change using ```<Ctrl-O> ``` and exit the editing screen using ```<Ctrl-X>```.
 
 ## Step8: Run the tests, demonstrating that they now succeed
