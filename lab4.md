@@ -32,6 +32,29 @@ git clone https://github.com/Taiki-id31/lab7.git
 ## Step7: Edit the code file to fix the failing test
 ```$nano  ListExamples.java``` 
 
+change
+
+```$<Ctrl-O><Return><Ctrl-X>``` 
+
+## Step8: Run the tests, demonstrating that they now succeed
+```$<Ctrl-R> javac <Return>``` 
+```$<Ctrl-R> java <up><up><up><up><up><up><up><up><Return>``` 
+
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+
+
+## Step9: Commit and push the resulting change to your Github account (you can pick any commit message!)
+```$git <Space> add <tab> <Ctrl-V> <return>``` 
+git add ListExamples.java 
+```$git <Space> commit <Space> -m <Space> "commit"``` 
+git commit -m "commit"
+```$git push``` 
+
+
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+
 
 
 
