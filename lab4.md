@@ -45,7 +45,7 @@ Executed Command
 ```$java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests```
 
 Note:  
-The two commands above conduct compiling and executing the files. In both commands, I used ```$<Ctrl-R>``` to search the command from the history.
+The two commands above conduct compiling and executing the files. In both commands, I used ```$<Ctrl-R>``` to search the command from the history. The second command was two up in the history, so I used up arrow key twice.
 
 <img src="lab-report4-image/error.png" width="60%"> 
 
@@ -78,7 +78,7 @@ Executed Command
 ```$java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests```
 
 Note:   
-I recompiled the file and executed it again using the same commands I used. As the below picture shows, the problem was resolved.
+I recompiled the file and executed it again using the same commands I used. As the below picture shows, the problem was resolved. The second command was eight up in the history, so I used up arrow key eight times. 
 
 <img src="lab-report4-image/succeed.png" width="60%">   
 
