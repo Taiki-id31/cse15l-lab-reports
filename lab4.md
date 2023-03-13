@@ -17,12 +17,12 @@ Entered command
 ```$git clone <Command-V> ``` 
 
 Executed Command  
-```$git clone https://github.com/Taiki-id31/lab7.git```
+```$git clone git@github.com:Taiki-id31/lab7.git```
 
 Note:  
 I first go to the GitHub page of the forked file and copy the ssh key. Afterward, go back to the terminal and type ```$git clone ``` and the copied ssh-key using ```<Command-V>```. 
 
-<img src="lab-report4-image/ssh-link.png" width="60%"> 
+<img src="lab-report4-image/git.png" width="60%"> 
 <img src="lab-report4-image/git-clone.png" width="60%">
 
 ## Step6: Run the tests, demonstrating that they fail
