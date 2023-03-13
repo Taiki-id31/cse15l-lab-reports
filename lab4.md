@@ -57,13 +57,13 @@ Note:
 I can use nano command to open and edit the specified file. Since the error in step6 is caused by ListExamples.java, I specified the file. As the image below shows, the bug is due to the index2 is not correctly updated, so I rewrite the index1 into index2. 
 
 
-```<Down> (× 42-times) <Rgiht> (× 12-times) <Delete> 1```  
+```<down> (× 42-times) <Rgiht> (× 12-times) <Delete> 1```    
+```<Ctrl-O> <Return> <Ctrl-X>```   
 
 <img src="lab-report4-image/nano.png" width="60%">  
 
-<img src="lab-report4-image/file-edit.png" width="60%">  
+<img src="lab-report4-image/file-edit.png" width="60%">   
 
-```<Ctrl-O> <Return> <Ctrl-X>```   
 Note:    
 After editing the file, I can save the change using ```<Ctrl-O> ``` and exit the editing screen using ```<Ctrl-X>```.
 
