@@ -54,7 +54,7 @@ Entered and Executed command
 ```$nano  ListExamples.java```    
 
 Note:   
-I can use nano command to open and edit the specified file. Since the error in step6 is caused by ListExamples.java, I specified the file. As the image below shows, the bug is due to the index2 is not correctly updated, so I rewrite the index1 into index2. 
+I can use nano command to open and edit the specified file. Since the error in step6 is caused by ListExamples.java, I specified the file. As the image below shows, the bug is due to the index2 is not correctly updated, so I rewrite the index1 into index2 using the following commands. 
 
 
 ```<down> (× 42-times) <Rgiht> (× 12-times) <Delete> 1```    
