@@ -45,7 +45,7 @@ Output
 <img src="lab-report5-image/test1.png" width="60%"> 
 
 ## Test2: Correct methods (I would expect this to get full or near-to-full credit)
-Entered & Executed command   
+Entered command   
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected``` 
 
 Note:  
@@ -54,7 +54,7 @@ This submission does not contain any errors in its methods. As a result, I was a
 <img src="lab-report5-image/test2.png" width="60%"> 
 
 ## Test3: Method including syntax error of a missing semicolon
-Entered & Executed command   
+Entered command   
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-compile-error```     
 
 Note:   
@@ -63,7 +63,7 @@ The submitted methods contain some syntax errors, which should cause error durin
 <img src="lab-report5-image/test3.png" width="60%">   
 
 ## Test4: The arguments of filter in the wrong order
-Entered & Executed command   
+Entered command   
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-signature```     
 
 
