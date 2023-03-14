@@ -41,7 +41,7 @@ Entered command
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3``` 
 
 Note:  
-I first go to the GitHub page of the forked file and copy the ssh key. Afterward, go back to the terminal and type ```$git clone ``` and the copied ssh-key using ```<Command-V>```. 
+Since the index2 variable is not properly updated within a for-loop in the ListExamples class, this submission should fail due to a timeout error. The following screenshot indicates that the submitted file was successfully cloned and the ListExamples.java file was found when running the grade.sh script. However, the submission failed due to a timeout exception, as I expected.
 
 Output  
 <img src="lab-report5-image/test1.png" width="60%"> 
@@ -53,7 +53,7 @@ Entered & Executed command
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected``` 
 
 Note:  
-Since the lab file is cloned in the home directory, I have to move to lab7 using cd command. 
+This submission does not contain any errors in its methods. As a result, I was able to successfully clone the submission, find the specified file, and pass all test cases.
 
 <img src="lab-report5-image/test2.png" width="60%"> 
 
