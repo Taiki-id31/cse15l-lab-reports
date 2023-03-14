@@ -64,7 +64,7 @@ Entered & Executed command
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-compile-error```     
 
 Note:   
-I can use nano command to open and edit the specified file. Since the error in step6 is caused by ListExamples.java, I specified the file. As the image below shows, the bug is due to the index2 is not correctly updated, so I rewrite the index1 into index2 using the following commands.  
+The submitted methods contain some syntax errors, which should cause error during compile time. The following output indicates that I successfully cloned the files, found the specified files, but failed during compilation due to a missing semicolon. It's important to note that the bash script in grade.sh is designed to exit immediately upon encountering a compilation error to prevent the possibility of running a previously compiled file instead of the currently submitted file.
 
 <img src="lab-report5-image/test3.png" width="60%">   
 
@@ -74,7 +74,18 @@ https://github.com/ucsd-cse15l-f22/list-methods-signature
 Entered & Executed command   
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-signature```     
 
+
 Note:   
-I can use nano command to open and edit the specified file. Since the error in step6 is caused by ListExamples.java, I specified the file. As the image below shows, the bug is due to the index2 is not correctly updated, so I rewrite the index1 into index2 using the following commands.  
+To test the filter method in the ListExamples class, I created a new test case called testFilter in the TestListExamples class. Since the submitted file's filter method argument is in the wrong order, it should fail during compilation. The picture shows that the submission failed due to a compiler error of incompatible type, as expected.
+
+```
+@Test(timeout = 500)
+    public void testFilter() {
+    List<String> list = Arrays.asList("moon");
+    IsMoon ismoon = new IsMoon();
+    List<String> filtered = ListExamples.filter(list, ismoon);
+    assertEquals(list, filtered);
+}
+``` 
 
 <img src="lab-report5-image/test4.png" width="60%">  
