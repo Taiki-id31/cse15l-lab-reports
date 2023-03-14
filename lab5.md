@@ -44,7 +44,7 @@ Note:
 I first go to the GitHub page of the forked file and copy the ssh key. Afterward, go back to the terminal and type ```$git clone ``` and the copied ssh-key using ```<Command-V>```. 
 
 Output  
-<img src="lab-report4-image/git.png" width="60%"> 
+<img src="lab-report5-image/test1.png" width="60%"> 
 
 ## Test2: Correct methods (I would expect this to get full or near-to-full credit)
 https://github.com/ucsd-cse15l-f22/list-methods-corrected
@@ -55,7 +55,7 @@ Entered & Executed command
 Note:  
 Since the lab file is cloned in the home directory, I have to move to lab7 using cd command. 
 
-<img src="lab-report4-image/error.png" width="60%"> 
+<img src="lab-report5-image/test2.png" width="60%"> 
 
 ## Test3: Method including syntax error of a missing semicolon
 https://github.com/ucsd-cse15l-f22/list-methods-compile-error
@@ -66,7 +66,7 @@ Entered & Executed command
 Note:   
 I can use nano command to open and edit the specified file. Since the error in step6 is caused by ListExamples.java, I specified the file. As the image below shows, the bug is due to the index2 is not correctly updated, so I rewrite the index1 into index2 using the following commands.  
 
-<img src="lab-report4-image/file-edit.png" width="60%">   
+<img src="lab-report5-image/test3.png" width="60%">   
 
 ## Test4: The arguments of filter in the wrong order
 https://github.com/ucsd-cse15l-f22/list-methods-signature
@@ -77,4 +77,4 @@ Entered & Executed command
 Note:   
 I can use nano command to open and edit the specified file. Since the error in step6 is caused by ListExamples.java, I specified the file. As the image below shows, the bug is due to the index2 is not correctly updated, so I rewrite the index1 into index2 using the following commands.  
 
-<img src="lab-report4-image/file-edit.png" width="60%">  
+<img src="lab-report5-image/test4.png" width="60%">  
