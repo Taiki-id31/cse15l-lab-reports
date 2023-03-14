@@ -35,7 +35,7 @@ java -cp $CPATH  org.junit.runner.JUnitCore TestListExamples
 ``` 
 
 ## Test1: The same code as the starter from lab3
-https://github.com/ucsd-cse15l-f22/list-methods-lab3
+[https://github.com/ucsd-cse15l-f22/list-methods-lab3](https://github.com/ucsd-cse15l-f22/list-methods-lab3)
 
 Entered command   
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3``` 
@@ -47,7 +47,7 @@ Output
 <img src="lab-report5-image/test1.png" width="60%"> 
 
 ## Test2: Correct methods (I would expect this to get full or near-to-full credit)
-https://github.com/ucsd-cse15l-f22/list-methods-corrected
+[https://github.com/ucsd-cse15l-f22/list-methods-corrected](https://github.com/ucsd-cse15l-f22/list-methods-corrected)
 
 Entered & Executed command   
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected``` 
@@ -58,7 +58,7 @@ This submission does not contain any errors in its methods. As a result, I was a
 <img src="lab-report5-image/test2.png" width="60%"> 
 
 ## Test3: Method including syntax error of a missing semicolon
-https://github.com/ucsd-cse15l-f22/list-methods-compile-error
+[https://github.com/ucsd-cse15l-f22/list-methods-compile-error](https://github.com/ucsd-cse15l-f22/list-methods-compile-error)
 
 Entered & Executed command   
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-compile-error```     
@@ -69,7 +69,7 @@ The submitted methods contain some syntax errors, which should cause error durin
 <img src="lab-report5-image/test3.png" width="60%">   
 
 ## Test4: The arguments of filter in the wrong order
-https://github.com/ucsd-cse15l-f22/list-methods-signature
+[https://github.com/ucsd-cse15l-f22/list-methods-signature](https://github.com/ucsd-cse15l-f22/list-methods-signature)
 
 Entered & Executed command   
 ```$bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-signature```     
